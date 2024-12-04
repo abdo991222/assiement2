@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up </title>
+    <!-- ========== Start google fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- ========== End google fonts ========== -->
+
+    <!-- ========== Start fontAwesome library ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- ========== End fontAwesome library ========== -->
+
+    <!-- ========== Start bootstrap css ========== -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- ========== End bootstrap css ========== -->
+
+    <!-- ========== Start style css ========== -->
+    <link rel="stylesheet" href="../css/signup.css" />
+    <!-- ========== End style css ========== -->
+</head>
+
+<body>
+    <section>
+        <div class="container d-flex justify-content-center align-items-center min-vh-50 text-center">
+            <div class="section-content">
+                <h1>Smart Login System</h1>
+                <div>
+                    <input type="text" placeholder="Enter your name" class="form-input mb-4" id="loginName" />
+                </div>
+                <div>
+                    <input type="email" placeholder="Enter your email" class="form-input mb-4" id="loginEmail" />
+                </div>
+                <div>
+                    <input type="password" placeholder="Enter your password" class="form-input mb-4" id="loginPassword" />
+                </div>
+                <p id="errorMessage" class="d-none">All inputs is required</p>
+                <p id="successMessage" class="d-none">Success</p>
+                <p id="explainMessage" class="d-none" >email already exists</p>
+                <button type="submit" id="signupBtn">Sign Up</button>
+                <p class="finalparagraph">You have an account? <a class="text-white" id="loginAnchor" >Sign in</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Start bootstrap js ========== -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- ========== End bootstrap js ========== -->
+
+    <!-- ========== Start main js ========== -->
+    <script src="../js/signup.js"></script>
+    <!-- ========== End main js ========== -->
+</body>
+
+</html>
